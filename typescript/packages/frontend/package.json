@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "lint": "next lint --max-warnings=0",
     "lint:fix": "next lint --fix",
     "format": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
     "format:fix": "prettier --write './**/*.{js,jsx,ts,tsx,json}'"
