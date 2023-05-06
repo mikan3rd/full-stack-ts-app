@@ -9,7 +9,7 @@
     "packages/*"
   ],
   "engines": {
-    "node": "18.16"
+    "node": "20.1"
   },
   "scripts": {
     "@backend": "yarn workspace backend",
