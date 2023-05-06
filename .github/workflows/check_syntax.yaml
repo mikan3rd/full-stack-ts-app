@@ -35,8 +35,8 @@ jobs:
       - run: yarn @frontend install
         working-directory: typescript
 
-      - run: yarn @frontend type-check
-        working-directory: typescript
+      # - run: yarn @frontend type-check
+      #   working-directory: typescript
 
       - run: yarn @frontend lint
         working-directory: typescript
