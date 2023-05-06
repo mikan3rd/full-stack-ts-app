@@ -33,14 +33,14 @@ jobs:
           restore-keys: ${{ runner.os }}-yarn-
 
       - run: yarn @frontend install
-        working-directory: ./typescript
+        working-directory: typescript
 
       - run: yarn @frontend type-check
-        working-directory: ./typescript
+        working-directory: typescript
 
       - run: yarn @frontend lint
-        working-directory: ./typescript
+        working-directory: typescript
 
       - run: yarn @frontend build
-        working-directory: ./typescript
+        working-directory: typescript
 
