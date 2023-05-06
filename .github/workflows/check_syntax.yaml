@@ -14,7 +14,7 @@ jobs:
       matrix:
         node-version: [20.1]
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -35,8 +35,8 @@ jobs:
       - run: yarn @frontend install
         working-directory: typescript
 
-      # - run: yarn @frontend type-check
-      #   working-directory: typescript
+      - run: yarn @frontend type-check
+        working-directory: typescript
 
       - run: yarn @frontend lint
         working-directory: typescript
